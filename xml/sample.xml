@@ -1,0 +1,20 @@
+<toast scenario="reminder">
+    <visual>
+        <binding template="ToastGeneric">
+            <text>Toast was burnt</text>
+            <image placement="appLogoOverride" src="C:\images\toaster.png"/>
+        </binding>
+    </visual>
+    <actions>
+        <input id="snoozeTime" type="selection" defaultInput="15">
+            <selection id="1" content="1 minute"/>
+            <selection id="15" content="15 minutes"/>
+            <selection id="60" content="1 hour"/>
+            <selection id="240" content="4 hours"/>
+            <selection id="1440" content="1 day"/>
+        </input>
+        <action activationType="system" arguments="snooze" hint-inputId="snoozeTime" content="" />
+        <action activationType="system" arguments="dismiss" content=""/>
+     </actions>
+     <audio silent="true"/>
+</toast>
