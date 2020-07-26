@@ -2,6 +2,18 @@
 
 Toast Notifier for Windows.
 
+## Installation
+
+```powershell
+# Clone to any path. In this example, we clone to C:/toaster.
+cd C:\
+git clone https://github.com/onokit/toaster
+
+# If you see it working, toast it with the included XML file.
+cd toaster
+.\toaster.ps1 xml\sample.xml
+```
+
 ## How to Use
 
 ```powershell
